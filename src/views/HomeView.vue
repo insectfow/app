@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <image-resize-vue />
+    <image-resize-vue2 />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import ImageResizeVue from "@/components/ImageResize.vue";
+import ImageResizeVue2 from "@/components/ImageResize2.vue";
 export default {
   name: "HomeView",
-  components: {
-    HelloWorld,
+  data() {
+    return {};
   },
+  components: {
+    ImageResizeVue,
+    ImageResizeVue2,
+  },
+  methods: {},
 };
 </script>
+<style></style>
